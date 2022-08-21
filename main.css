@@ -1,0 +1,552 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* start nav */
+
+.nav {
+    position: relative;
+    width: 100%;
+    }
+.nav .box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 0;
+    background-color: #333;
+    padding: 10px;
+    box-shadow: -1px 1px 1px 1px grey;
+}
+.nav .ul{
+    z-index: 100;
+}
+
+.nav .box .input input{
+padding: 3px;
+    border:none;
+
+}
+.nav .box .input input:focus{
+    border: #6195ff 1px solid;
+outline: none;
+}
+
+.nav .box .ul ul{
+    display: flex;
+}
+.nav .box .input button{
+    border: #6195ff 1px solid;
+cursor: pointer;
+padding: 1px;
+}
+
+.nav .box .input button:hover{
+    background-color: lightgrey;
+
+}
+
+.nav .box li a{
+margin: 0 10px;
+padding: 3px;
+color: #fff;
+cursor: pointer;
+}
+/* 
+.nav .box .ul ul li:first-child{
+    background-color: ;
+
+} */
+.nav .box  li a:hover{
+    color: black;
+}
+.nav .box .ul ol{
+    background-color: lightgrey;
+    margin: 10px 7px;
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    z-index: -3;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
+
+}
+.ol-active{
+    height: 100px !important;
+    transition: height 1s;
+}
+.nav .box  ol li  {
+    margin: 7px 0;
+}
+.nav .box  ol li a:hover{
+    background-color: gray;
+    
+}
+.nav .ico-1{
+    display: none;
+}
+
+@media (max-width:700px) {
+    
+.nav .ul{
+    display: none;
+    background-color: #6195ff!important;
+}
+.nav .ico-1{
+    display: block;
+    position: absolute;
+    left: 60px;
+}
+
+
+}
+
+.fr .mn{
+    position: absolute;
+    width: 150px;
+    height: 165px;
+    background: #80808036;
+    left: 4px;
+    /* z-index: -88; */
+    overflow: hidden;
+    height: 0;
+    transition: height 1s;
+}
+.fr li a{
+    margin: 0 10px;
+    padding: 3px;
+    
+        cursor: pointer;
+   color: #000;
+
+    }
+
+.fr  li a:hover{
+    color: black;
+}
+
+.fr .ul ol{
+    background-color:rgb(73 73 73 / 21%);
+    margin: 10px 7px;
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    z-index: 99;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
+
+
+}
+/* .fr .ul ol a{
+    background: white;
+    padding: 6px 20px;
+}  */
+.ol-active{
+    height: 100px !important;
+    transition: height 1s;
+}
+
+.fr ol li  {
+    margin: 7px 0;
+}
+.fr  ol li a:hover{
+    background-color: gray;
+    
+}
+.mnac{
+    height: 165px !important ;
+
+}
+
+
+/* end nav */
+
+
+
+/* start contaner */
+.contaner{
+    width: 100%;
+    /* height: 100vh; */
+    background-color:rgb(180 174 174 / 14%);
+    box-shadow: 1px 1px 2px 1px rgb(99, 98, 98);
+}
+.contaner .hh{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(128 128 128 / 9%);
+    box-shadow: 0 2px 5px 0px grey;
+}
+
+.contaner .box{
+display: flex;
+justify-content: center;
+text-align: center;
+flex-wrap: wrap;
+padding-top: 20px;
+}
+
+.contaner .box .imge{
+    flex-basis: 30%;
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+.contaner .box .imge img{
+    height: 363px;
+    width: 296px;
+}
+.box .imge .size{
+    display: flex;
+    justify-content: space-around;
+    font-size:x-large;    
+    background-color: white;
+    margin: auto;
+    width: 300px;
+}
+.contaner .imge .start{
+    background-color: white;
+    text-align: start;
+    width: 300px;
+    margin: auto;
+    padding: 5px 10px;
+    }
+    
+.contaner .start i{
+    margin-right: 10px;
+    cursor: pointer;
+    }
+    .icc a{
+        color: white;
+        font-size: larger;
+        font-weight: bolder;
+    
+    }
+    .contaner .icc i{
+        color: white;
+        font-size: larger;
+        font-weight: bolder;
+    
+    }
+    .contaner .imge:hover:hover .icc{
+        z-index: 8;
+    }
+/* 
+ .box .imge::before{
+content: attr(data-size);
+position: absolute;
+    height: 363px;
+    width: 296px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+text-align: center;
+
+} */
+
+
+
+
+
+
+
+
+/* end contaner */
+
+
+/* start page */
+.search{
+    width: 100%;
+    height: 150vh;
+    position: relative;
+}
+
+.search .box{
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%); */
+}
+
+.search .box .imas{
+    flex-basis: 30%;
+    padding: 10px;
+    cursor: pointer;
+box-shadow:  8px 9px 21px -2px rgb(145 143 143);
+margin: 10px;
+}
+
+.search .box a{
+    color: black;
+}
+
+
+
+/* end page */
+
+
+
+/* start colock */
+.clock{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(180 174 174 / 19%);
+    box-shadow: 1px 1px 2px 1px rgb(99, 98, 98);
+ text-align: center;
+ margin: auto;
+}
+.clock h1{
+    box-shadow: 0px 3px 5px 1px grey;
+}
+
+.clock .box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.clock .box .imge{
+flex-basis: 30%;
+margin: 10px;
+text-align: center;
+position: relative;
+}
+
+.clock .imge .start{
+background-color: white;
+text-align: start;
+width: 300px;
+margin: auto;
+padding: 5px 10px;
+}
+
+.clock .start i{
+margin-right: 10px;
+cursor: pointer;
+}
+.icc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000069;
+    padding: 20px;
+    border: solid 1px #53CCD7;
+cursor: pointer;
+border-radius: 10px;
+z-index: -5;
+
+}
+.clock .icc a{
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+.clock .icc i{
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+.clock .imge:hover:hover .icc{
+    z-index: 8;
+}
+
+/* .clock .imge1{
+    width: 511px;
+    position: absolute;
+    height: 500px;
+} */
+
+/* end colock */
+
+
+/* start mobile */
+.mobile{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(180 174 174 / 19%);
+    box-shadow: 1px 1px 2px 1px rgb(99, 98, 98);
+ text-align: center;
+ margin: auto;
+}
+.mobile h1{
+    box-shadow: 0px 3px 5px 1px grey;
+}
+
+.mobile .box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.mobile .box .imge{
+flex-basis: 30%;
+margin: 10px;
+text-align: center;
+position: relative;
+}
+
+.mobile .imge .start{
+background-color: white;
+text-align: start;
+width: 300px;
+margin: auto;
+padding: 5px 10px;
+}
+
+.mobile .start i{
+margin-right: 10px;
+cursor: pointer;
+}
+.icc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000069;
+    padding: 20px;
+    border: solid 1px #53CCD7;
+cursor: pointer;
+border-radius: 10px;
+z-index: -5;
+
+}
+.mobile .icc a{
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+.mobile .icc i{
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+.mobile .imge:hover:hover .icc{
+    z-index: 8;
+}
+.mobile .box img{
+    width: 296px;
+    height: 375px;
+}
+.mobile .box img{
+    width: 296px;
+    height: 375px;
+}
+
+/* end mobil */
+
+
+
+.lo{
+    display: none;
+}
+
+.lol{
+    position: absolute;
+}
+
+
+.lii{
+    position: absolute;
+    width: 300px;
+    background-color: #888282d9;
+    height: 360px;
+    left: 10px;
+    top: 43px;
+    z-index: 10;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+overflow-x: auto;
+
+height: 0;
+transition: 1s;
+}
+
+.liiac{
+    height: 300px;
+width: 330px;
+}
+.lii .imge{
+    position: relative;
+    margin: 7px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.lii .icc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000069;
+    /* padding: 20px; */
+     border: solid 1px #53CCD7; 
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: -5;
+    width: 200px !important;
+    right: 0;
+
+}
+.lii .icc a{
+    display: none;
+}
+
+.lii .size{
+    display: flex;
+    justify-content: space-around;
+    /* font-size: x-large; */
+    background-color: white;
+    /* margin: auto; */
+    width: 100% !important;
+
+}
+.lii .start{
+    position: absolute;
+    width: 58%;
+}
+
+.lii  img{
+    width: 100px;
+height: 110px;
+/* top: 15px; */
+    position: relative;
+
+
+}
+
+
+#jkk{
+    position: absolute;
+    top: 0px;
+    color: white;
+    left: 0;
+    cursor: pointer;
+background-color: black;
+padding: 2px 10px;
+}
